@@ -1,8 +1,11 @@
 import React from 'react'
+import GallerySection from '@/components/features/galeri'
 
 function Galeri() {
   return (
-    <div>page</div>
+    <div>
+      <GallerySection/>
+    </div>
   )
 }
 

@@ -17,7 +17,7 @@ const Login = () => {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      router.push("/admin/dashboard"); // arahkan ke dashboard admin
+      router.push("/admin/dashboard"); 
     } catch (err) {
       setError("Email atau password salah.");
     }
@@ -25,7 +25,7 @@ const Login = () => {
 
   return (
     <div className="max-w-md mx-auto mt-20 p-8 border rounded shadow-lg">
-      <h2 className="text-2xl font-semibold mb-6 text-center">Login Admin</h2>
+      <h2 className="text-2xl font-semibold mb-6 text-center">Login Admin DPMDPTSP</h2>
       <form onSubmit={handleLogin} className="space-y-4">
         <div>
           <label htmlFor="email" className="block mb-1 font-medium">Email</label>
