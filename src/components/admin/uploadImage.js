@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { supabase } from "../../../supabase";
 
-const UploadImage = () => {
+const UploadImage = ({ onUploadSuccess }) => {
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [message, setMessage] = useState("");
@@ -26,7 +26,7 @@ const UploadImage = () => {
     const filePath = `images/${fileName}`;
 
     const { error: uploadError } = await supabase.storage
-      .from("public") // nama bucket di Supabase Storage
+      .from("image-bucket")
       .upload(filePath, file);
 
     if (uploadError) {
@@ -35,12 +35,10 @@ const UploadImage = () => {
       return;
     }
 
-    // Dapatkan public URL file
-    const { data } = supabase.storage.from("public").getPublicUrl(filePath);
-
-    setMessage(`Upload berhasil! File URL: ${data.publicUrl}`);
+    setMessage("Upload berhasil!");
     setUploading(false);
     setFile(null);
+    if (onUploadSuccess) onUploadSuccess();
   };
 
   return (

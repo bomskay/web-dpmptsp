@@ -7,7 +7,7 @@ const StrukturOrganisasi = () => {
       
       <div className="flex justify-center">
         <img
-          src="/image/struktur.jpeg" // Ganti dengan path gambar kamu
+          src="/image/struktur.png" // Ganti dengan path gambar kamu
           alt="Struktur Organisasi"
           className="max-w-full md:max-w-3xl rounded shadow-md"
         />

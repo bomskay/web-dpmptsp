@@ -1,12 +1,9 @@
-import React from 'react'
-import GallerySection from '@/components/features/galeri'
+import GallerySection from "@/components/features/galeri";
 
-function Galeri() {
+export default function Galeri() {
   return (
     <div>
-      <GallerySection/>
+      <GallerySection />
     </div>
-  )
+  );
 }
-
-export default Galeri
