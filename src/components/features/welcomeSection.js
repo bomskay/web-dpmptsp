@@ -16,11 +16,9 @@ const WelcomeSection = () => {
         <div>
   <h3 className="text-2xl font-bold mb-4 text-center">Misi</h3>
   <ul className="list-decimal space-y-2 max-w-3xl mx-auto text-justify text-xl">
-    <li>Memantapkan Manajemen Birokrasi Yang Profesional Melalui Tata Kelola Pemerintahan Yang Baik</li>
-    <li>Meningkatkan Pembangunan Sumberdaya Manusia Yang Berbudaya Dan Berdaya Saing</li>
-    <li>Mewujudkan Kemandirian Ekonomi Dengan Mendorong Sektor Pertanian, Perikanan Dan Pariwisata</li>
-    <li>Mewujudkan Pengembangan Kewilayahan Dengan Prinsip Pembangunan Berkelanjutan</li>
-    <li>Meningkatkan Pemerataan Kesejahteraan Masyarakat Yang Berkeadilan</li>
+    <li>Meningkatkan Pembangunan SDM Minahasa Yang Sehat, Cerdas, Berbudaya dan Berdaya Saing;</li>
+    <li>Meningkatkan Pembangunan Infrastruktur Berwawasan Lingkungan Untuk Mewujudkan Ekonomi Yang Tangguh;</li>
+    <li>Menetapkan Tata Kelola Pemerintahan Yang Akuntbel Berbasis Digitalisasi dan Inovatif Untuk Mewujudkan Pelayanan Publik Yang Prima</li>
   </ul>
 </div>
 
